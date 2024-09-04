@@ -1,0 +1,134 @@
+body {
+    font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', sans-serif;
+    background-image: url('./images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    margin: 0;
+}
+
+.form-container {
+    background-color: rgba(255, 251, 242, 0.9);
+    border: 2px solid #FFAA00;
+    border-radius: 15px;
+    margin: auto;
+    max-width: 90%;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.form-field {
+    margin-bottom: 15px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.2rem; /* Use rem for scalability */
+}
+
+.form-field input,
+.form-field select {
+    width: 93%;
+    padding: 10px;
+    border: 2px solid #FFAA00;
+    border-radius: 10px;
+    font-size: 1rem; /* Use rem for scalability */
+    background-color: #FFFFFF;
+    color: #333;
+}
+
+.submit-button {
+    background-color: #FFAA00;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #FF8800;
+    transform: scale(1.05);
+}
+
+.header {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+    color: #FFAA00;
+}
+
+.instruction-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.footer-note {
+    font-size: 0.875rem;
+    color: #777;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.success-message {
+    font-size: 1.125rem;
+    color: #4CAF50;
+    margin-top: 20px;
+}
+
+.error-message {
+    font-size: 1.125rem;
+    color: #FF0000;
+    margin-top: 20px;
+}
+
+.loading-spinner {
+    display: none;
+    margin-top: 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #FFAA00;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .form-field label,
+    .submit-button,
+    .header,
+    .instruction-text,
+    .footer-note {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .submit-button {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
